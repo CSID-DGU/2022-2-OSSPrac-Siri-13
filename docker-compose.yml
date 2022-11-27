@@ -7,6 +7,4 @@ services:
   ports:
     - "80:80"
   
-  production:
-   image: ${DOCKER_USER_ID}/siri_hw6:${BUILD_NUMBER}
   
