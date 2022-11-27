@@ -2,8 +2,11 @@ version: "3.0"
 
 services:
  webapp:
-  image: siri_image:3.0
+  image: ${DOCKER_USER_ID}/siri_hw6
   build: .
   ports:
     - "80:80"
+  
+  production:
+   image: ${DOCKER_USER_ID}/siri_hw6:${BUILD_NUMBER}
   
